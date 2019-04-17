@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F424B"
+    tools:context="kz.damir211.rates.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        app:srcCompat="@drawable/fon"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/загрузка_данных"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="#3F424B"
+            android:textColor="#FFFFFF" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/Обновить"
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large" />
+
+</LinearLayout>
